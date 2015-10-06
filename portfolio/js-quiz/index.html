@@ -7,6 +7,7 @@
     <title>Quiz Demo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="css/quiz-app.css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -32,9 +33,63 @@
     <div class="row">
         This is quiz demo app. This app demonstrates only frontend programming. App written in JavaScript with JQuery library.
     </div>
+    <div class="row" id="quiz-app">
+
+    </div>
+</div>
+
+<div class="hidden" id="quiz-app-components">
+    <div class="quiz-app-header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#quiz-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Quiz</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="quiz-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown quiz-app-questions-navbar">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Questions <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-right">
+                        <li><p class="navbar-text quiz-app-globaltimer"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="quiz-app-footer">
+        Footer
+    </div>
+    <div class="quiz-app-start">
+        <h1>Starting screen of app</h1>
+        <button type="button" class="btn btn-primary btn-lg quiz-app-start-button">Start</button>
+    </div>
+    <div class="quiz-app-question">
+        <h3 class="quiz-app-question-title"></h3>
+        <div class="quiz-app-question-description"></div>
+        <div class="quiz-app-question-choices"></div>
+        <div class="quiz-app-question-buttons">
+            <button type="button" class="btn btn-default quiz-app-prev-button ">Previous</button>
+            <button type="button" class="btn btn-primary quiz-app-next-button pull-right">Next</button>
+        </div>
+    </div>
+    <div class="quiz-app-finish">
+
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/quiz.js"></script>
 </body>
 </html>

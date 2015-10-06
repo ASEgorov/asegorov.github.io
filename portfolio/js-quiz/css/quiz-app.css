@@ -1,0 +1,9 @@
+#quiz-app{
+    padding: 20px 10px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ddd;
+}
+
+.quiz-app-start{
+    text-align: center;
+}
